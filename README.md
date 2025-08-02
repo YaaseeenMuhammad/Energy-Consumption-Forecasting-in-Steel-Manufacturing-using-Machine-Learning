@@ -4,6 +4,7 @@ Energy Consumption Forecasting in Steel Manufacturing using Machine Learning
 ⚙️ Steel Industry Energy Usage Prediction
 
 This project applies advanced machine learning and feature engineering techniques to predict electricity usage (kWh) in the steel manufacturing sector using historical and operational data. The aim is to support energy optimization, cost reduction, and environmental sustainability through data-driven decision-making.
+
 📁 Dataset
 
     Source: Steel_industry_data.csv
