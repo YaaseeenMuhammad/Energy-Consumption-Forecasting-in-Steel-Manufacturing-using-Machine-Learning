@@ -83,15 +83,18 @@ Trained and compared multiple regressors:
         Feature importance (for Gradient Boosting)
 
 🔢 Final Results Summary
-Model	RMSE	MAE	R²
-Linear Regression	...	...	...
-Random Forest	...	...	...
-Gradient Boosting (Tuned)	✅ Best	✅ Best	✅ Best
+## Model Performance Comparison
 
-    Note: Replace ... with actual scores from your results_df.
+| Model             | RMSE     | MAE      | R² Score |
+|------------------|----------|----------|----------|
+| Linear Regression | 0.166014 | 0.123135 | 0.981821 |
+| Random Forest     | 0.160562 | 0.105334 | 0.982995 |
+| Gradient Boosting | **0.140597** | **0.096073** | **0.986961** |
+| K-Neighbors       | 0.162006 | 0.114850 | 0.982688 |
+| Support Vector Regression (SVR) | 0.159354 | 0.117611 | 0.983250 |
+| Decision Tree     | 0.221236 | 0.141416 | 0.967715 |
 
-📈 Sample Predictions
-Index	Predicted kWh	Actual kWh
-1	1234.56	1278.90
-2	1456.78	1490.12
-...	...	...
+**Best Model:** `Gradient Boosting` shows the best performance with the lowest RMSE and MAE, and the highest R² score.
+
+
+
