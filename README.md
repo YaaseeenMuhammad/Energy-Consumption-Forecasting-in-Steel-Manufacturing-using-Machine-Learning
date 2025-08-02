@@ -14,6 +14,7 @@ This project applies advanced machine learning and feature engineering technique
     Target Variable: Usage_kWh (transformed to Usage_log using log1p)
 
 📊 Features Used
+
 ✅ Numerical Features (engineered/transformed):
 
     Lagging and leading reactive power (with log and power transformations)
@@ -22,11 +23,14 @@ This project applies advanced machine learning and feature engineering technique
 
     Time-based: hour, is_weekend, NSM
 
+
 🧩 Categorical Features:
 
     WeekStatus, day_of_week, Load_Type
 
+
 🛠️ Workflow Overview
+
 1. Data Preprocessing
 
     Parsed dates, removed duplicates and handled nulls
@@ -34,6 +38,7 @@ This project applies advanced machine learning and feature engineering technique
     Created time-based features like hour, day_of_week, and is_weekend
 
     Cleaned categorical columns and ensured consistent casing
+
 
 2. Exploratory Data Analysis (EDA)
 
@@ -43,6 +48,7 @@ This project applies advanced machine learning and feature engineering technique
 
     Evaluated skewness and corrected via log + power transformation (Yeo-Johnson)
 
+
 3. Feature Engineering
 
     Created log-transformed and power-transformed variables
@@ -50,6 +56,7 @@ This project applies advanced machine learning and feature engineering technique
     One-hot encoded categorical features
 
     Selected top predictors using F-test scores and correlation with target
+
 
 4. Modeling & Evaluation
 
@@ -67,6 +74,7 @@ Trained and compared multiple regressors:
 
     Decision Tree
 
+
 🔍 Evaluation Metrics:
 
     RMSE
@@ -83,7 +91,9 @@ Trained and compared multiple regressors:
 
         Feature importance (for Gradient Boosting)
 
+
 🔢 Final Results Summary
+
 ## Model Performance Comparison
 
 | Model             | RMSE     | MAE      | R² Score |
